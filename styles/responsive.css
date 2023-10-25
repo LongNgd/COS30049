@@ -1,0 +1,32 @@
+@media screen and (max-width:768px){
+    #login, #register{
+        width: 100%;
+    }
+
+    .nav-item, #search_input, .login-info {
+        margin: 4px 0;
+    }
+
+    .login-info button {
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #search_input {
+        max-width: 20%;
+    }
+
+    .nav-item, #search_input, .login-info {
+        margin: 0 .5em;
+    }
+
+    .login-info button {
+        margin-right: 12px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #search_input {
+        max-width: 40%;
+    }
+}

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price {
+    color: red;
+}
+
+#homepage, #marketplace, #cart, #profile {
+    background-color: aliceblue;
+    border-top: 1px solid black;
+    min-height: 100vh;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav a:hover {
+    font-size: 1.3em;
+}
+
+nav img {
+    height: 3.2em;
+}
+
+nav p {
+    line-height: 3.2em;
+}
+
+#login_page .card , #register_page .card{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#homepage .card-text span {
+    color: red;
+}
+
+
+
