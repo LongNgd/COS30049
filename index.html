@@ -238,16 +238,11 @@
             <h3>Payment Information</h3>
             <form>
                 <div class="form-group">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" required>
-                </div>
-                <div class="form-group">
-                    <label for="expiryDate">Expiry Date</label>
-                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YYYY" required>
-                </div>
-                <div class="form-group">
-                    <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+                    <label for="payMethod">Payment method:</label><br>
+                    <select id="payMethod" name="payMethod" class="p-2">
+                      <option value="BTC">Bitcoin</option>
+                      <option value="paypal">Paypal</option>
+                    </select>
                 </div>
                 <a type="submit" class="btn btn-primary my-2">Submit Payment</a>
             </form>
