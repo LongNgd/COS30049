@@ -48,7 +48,6 @@ Vue.createApp ({
             this.cart = true
             this.profile= false
             this.cart_item.push(this.nfts[index])
-            console.log(this.cart_item)
         },
         remove(index) {
             this.cart_item.splice(index, 1);
