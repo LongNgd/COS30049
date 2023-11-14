@@ -260,7 +260,7 @@
                 <p class="mb-2">Name: {{username_register}}</p>
                 <p class="mb-2">Email: {{email_register}}</p>
                 <p class="mb-2">Phone: {{phone_register}}</p>
-                <p id="acc_balance"></p>
+                <p>Balance: <span id="acc_balance"></span></p>
               </div>
               <h3 class="mt-3">Transaction history</h3>
               <div class="table-responsive">
@@ -284,7 +284,7 @@
                 </table>
               </div>
               <h3 class="mt-3">List of item:</h3>
-              <p id="item_list"></p>
+              <div id="item_list"></div>
               <button onclick="list_items()">Show items</button>
             </div>
         </div>
@@ -332,9 +332,7 @@
                         for (var i = 0; i < totalSupply; i++) {
                             friendinstance.colors(i).then(function(result2) {
                                 console.log(result2);
-                                for (var i = 0; i < result2.length; i++){
-                                  document.getElementById("item_list").innerHTML += result2[i]
-                                }
+                                document.getElementById("item_list").innerHTML += "<p>" + result2 + "</p>"
                             })
                         }
                     })
