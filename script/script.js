@@ -41,10 +41,25 @@ Vue.createApp ({
             logged_in: false,
             search_input: null,
             filter: null,
-            buy_item: {title: null, price: null}
+            buy_item: {title: null, price: null},
+
+            cart_item: [],
         }
     },
     methods: {
+        buy_clicked(index) {
+            this.login = false
+            this.register= false
+            this.homepage = false
+            this.marketplace = false
+            this.cart = true
+            this.profile= false
+            this.cart_item.push(this.nfts[index])
+            console.log(this.cart_item)
+        },
+        remove(index) {
+            this.cart_item.splice(index, 1);
+        },
         display_login() {
             this.login = true
             this.homepage = false
