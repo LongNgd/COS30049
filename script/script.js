@@ -13,13 +13,6 @@ Vue.createApp ({
                 {link: './items/thor.webp', title: 'Thor', price: 0.2, type: 'hero'},
             ],
 
-            // transactions data
-            transactions: [
-                {transaction_id: 1, timestamp: '2023-10-06 14:30:00 UTC', sender_address: 0x742d35Cc6634C0532925a3b844Bc454e4438f44e
-, recipient_address: 0x7dF68c2AaB3aE3A7E88679C7D6B7b44279c95B3E, token_id: 0x4b2f78a8c4d3c44607c26acac6da5f8b9d67c2a3
-, price: 0.1}
-            ],
-
             // variables to control display of pages
             login: false,
             homepage: true,
