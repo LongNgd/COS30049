@@ -24,7 +24,7 @@
 
 </head>
 
-<body onload="show_balance()">
+<body onload="show_info()">
     <div id="app">
         <nav class="navbar navbar-expand-md p-0" v-show="!login && !register">
             <div class="container">
@@ -261,6 +261,7 @@
                 <p class="mb-2">Email: {{email_register}}</p>
                 <p class="mb-2">Phone: {{phone_register}}</p>
                 <p>Balance: <span id="acc_balance"></span> ETH</p>
+                <p>Address: <span id="acc_address"></span></p>
               </div>
               <h3 class="mt-3">List of item:</h3>
               <div id="item_list"></div>
@@ -271,11 +272,12 @@
 
     <!-- blockchain functions -->
     <script>
-        async function show_balance() {
+        async function show_info() {
             const web3 = new Web3("http://100.26.23.131:8545");
             const accounts = await web3.eth.getAccounts();
             const balance = await web3.eth.getBalance(accounts[0]);
             document.getElementById("acc_balance").innerHTML = balance;
+            document.getElementById("acc_address").innerHTML = accounts;
         };
         async function list_items(){
           const web3 = new Web3("http://100.26.23.131:8545");
